@@ -90,6 +90,3 @@ SET "PowershellDLMRemotePath=%~1"
 SET "PowershellDLMLocalPath=%~2"
 powershell -command "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;(New-Object System.Net.WebClient).DownloadFile('!PowershellDLMRemotePath!','!PowershellDLMLocalPath!')" >NUL
 EXIT /B
-
-
-
